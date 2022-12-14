@@ -22,9 +22,14 @@
     justify-content: space-around;
     padding: 8px;
     width: 100%;
-    border-bottom: 1px solid var(--cinzaBorda);
+    box-shadow: 0px 1px 3px var(--cinzaBorda);
     z-index: 10;
     background-color: var(--branco);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .menu {
@@ -73,7 +78,7 @@
 
 /* About */
 
-.about {
+#about {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -116,7 +121,7 @@
 
 /* Practice */
 
-.practice {
+#practice {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,6 +174,7 @@
 
 .pratice-areas div p {
     color: var(--branco);
+    text-shadow: 3px 1px 1px rgb(0, 0, 0);
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -177,50 +183,55 @@
 /* Pratice Areas Images */
 
 .pen {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img1.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
 }
 
 .civ {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img2.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
 }
 
 .tri {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img3.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
 }
 
 .tra {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img4.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
 }
 
 .adm {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img5.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
 }
 
 .con {
-    background-image: url(../img/about-img1.jpg);
+    background-image: url(../img/pratice-areas-img/area-img6.jpg);
     background-size: 100%;
-    background-position: bottom;
     border-radius: 8px;
+}
+
+.pen:hover,
+.civ:hover,
+.tri:hover,
+.tra:hover,
+.adm:hover,
+.con:hover {
+    background-size: 110%;
+    transition: .8s ease-in-out;
+    background-position: left right;
 }
 
 /* Associates */
 
-.associates {
+#associates {
     padding: 20px;
     margin-top: 28px;
 }
@@ -272,7 +283,7 @@
 
 /* Contact */
 
-.contact {
+#contact {
     padding: 60px;
     background-color: var(--cinzaFundo);
 }

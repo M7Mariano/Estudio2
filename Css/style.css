@@ -80,6 +80,7 @@
     /* no hover, mudar o align-item para center */
     gap: 32px;
     padding: 20px;
+    margin-top: 28px;
 }
 
 .about-container {
@@ -121,7 +122,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-    padding: 20px;
+    padding: 60px;
     background-color: var(--cinzaFundo);
 }
 
@@ -164,8 +165,6 @@
     margin: 0 auto;
     width: 260px;
     height: 139px;
-
-    background-color: purple;
 }
 
 .pratice-areas div p {
@@ -217,4 +216,199 @@
     background-size: 100%;
     background-position: bottom;
     border-radius: 8px;
+}
+
+/* Associates */
+
+.associates {
+    padding: 20px;
+    margin-top: 28px;
+}
+
+.associates-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--verdeAguaEscuro);
+    border-bottom: 1px solid var(--cinzaBorda);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.associates-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.associates-content div {
+    width: 350px;
+}
+
+.associates-content div img {
+    margin-left: 50px;
+}
+
+.associates-content div h4 {
+    text-align: center;
+    padding: 8px;
+    color: var(--verdeAguaEscuro);
+    font-weight: 600;
+}
+
+.associates-content div p {
+    font-weight: 400;
+    text-indent: 4px;
+}
+
+.associates-content div span {
+    font-weight: 600;
+}
+
+/* Contact */
+
+.contact {
+    padding: 60px;
+    background-color: var(--cinzaFundo);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--verdeAguaEscuro);
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--cinzaBorda);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    color: var(--verdeAguaEscuro);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: var(--cinzaBorda);
+}
+
+.contact-form textarea {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    background-color: var(--cinzaBorda);
+    margin-bottom: 8px;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--verdeAguaEscuro);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: var(--verdeAguaClaro);
+    border-radius: 4px;
+    transition: .4s ease-in;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 60px;
+    background-color: var(--verdeAguaEscuro);
+    color: var(--branco)
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-localization {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-localization i {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.footer-localization i:hover {
+    color: var(--verdeAguaClaro);
+    transition: .5s ease-in;
+}
+
+.footer-localization p {
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.footer-social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.footer-social-medias i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.footer-social-medias i:hover {
+    color: var(--verdeAguaClaro);
+    transition: .5s ease-in;
+}
+
+.footer-container span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--verdeAguaClaro);
 }

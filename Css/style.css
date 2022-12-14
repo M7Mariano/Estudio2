@@ -13,6 +13,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Animation */
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 /* =========== HEADER */
 
 .header {
@@ -25,6 +38,64 @@
     box-shadow: 0px 1px 3px var(--cinzaBorda);
     z-index: 10;
     background-color: var(--branco);
+}
+
+.mobile-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-btn i {
+    font-size: 20px;
+    color: var(--verdeAguaEscuro);
+}
+
+.close-menu {
+    display: none;
+}
+
+.close-menu i {
+    font-size: 20px;
+    color: var(--branco);
+}
+
+
+@media (width<=1000px) {
+    .mobile-btn {
+        display: block;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .nav.active .menu li:hover {
+        color: var(--branco);
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    .nav.active .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--verdeAguaClaro);
+        border-left: 1px solid var(--cinzaEscuro);
+        height: 100%;
+        max-width: 280px;
+        width: 100%;
+        right: 0;
+        top: 0;
+        animation: go-back 1s;
+    }
+
+    .nav.active .menu li {
+        display: flex;
+    }
 }
 
 a {
@@ -48,7 +119,7 @@ a {
 
 .menu li:hover {
     color: var(--verdeAguaClaro);
-    transition: .3s ease-in;
+    transition: .5s ease-in;
 }
 
 /* =========== Banner */
@@ -61,7 +132,7 @@ a {
 .banner-text-container {
     position: absolute;
     max-width: 600px;
-    width: 100%;
+    width: 95%;
     top: 40%;
     opacity: .7;
 }
@@ -82,6 +153,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     /* no hover, mudar o align-item para center */
     gap: 32px;
     padding: 20px;
@@ -127,7 +199,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-    padding: 60px;
+    padding: 30px;
     background-color: var(--cinzaFundo);
 }
 
@@ -185,36 +257,42 @@ a {
 .pen {
     background-image: url(../img/pratice-areas-img/area-img1.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .civ {
     background-image: url(../img/pratice-areas-img/area-img2.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .tri {
     background-image: url(../img/pratice-areas-img/area-img3.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .tra {
     background-image: url(../img/pratice-areas-img/area-img4.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .adm {
     background-image: url(../img/pratice-areas-img/area-img5.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .con {
     background-image: url(../img/pratice-areas-img/area-img6.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
 }
 
@@ -284,7 +362,7 @@ a {
 /* Contact */
 
 #contact {
-    padding: 60px;
+    padding: 30px;
     background-color: var(--cinzaFundo);
 }
 

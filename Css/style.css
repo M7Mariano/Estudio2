@@ -135,7 +135,7 @@ a {
     position: absolute;
     max-width: 600px;
     width: 95%;
-    top: 40%;
+    top: 30%;
     opacity: .7;
 }
 
@@ -145,6 +145,12 @@ a {
     font-weight: 500;
     background-color: var(--verdeAguaEscuro);
     padding: 20px;
+}
+
+@media (width<320px) {
+    .banner-text-container {
+        top: 20%;
+    }
 }
 
 /* =========== MAIN */
@@ -192,6 +198,23 @@ a {
     box-shadow: 6px 3px 18px -12px rgba(41, 41, 41, 1);
 }
 
+@media (width<307px) {
+    .about-img img {
+        width: 99%;
+        height: 99%;
+    }
+}
+
+@media (width<375px) {
+    .about-title {
+        font-size: 24px;
+    }
+
+    .about-container p {
+        font-size: 14px;
+    }
+}
+
 /* =========== Practice */
 
 #practice {
@@ -200,7 +223,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-    padding: 30px;
+    padding: 40px 0px;
     background-color: var(--cinzaFundo);
 }
 
@@ -229,14 +252,14 @@ a {
     margin-bottom: 32px;
 }
 
-.pratice-areas {
+.practice-areas {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.pratice-areas div {
+.practice-areas div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,12 +268,29 @@ a {
     height: 139px;
 }
 
-.pratice-areas div p {
+@media (width<375px) {
+    .practice-areas div {
+        width: 220px;
+        height: 119px;
+    }
+}
+
+.practice-areas div p {
     color: var(--branco);
     text-shadow: 3px 1px 1px rgb(0, 0, 0);
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+@media (width<375px) {
+    .practice-title {
+        font-size: 24px;
+    }
+
+    .practice-parag {
+        font-size: 14px;
+    }
 }
 
 /* =========== Pratice Areas Images */
@@ -338,10 +378,12 @@ a {
 
 .associates-content div {
     width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .associates-content div img {
-    margin-left: 50px;
+    margin: 0 auto;
 }
 
 .associates-content div h4 {
@@ -360,10 +402,24 @@ a {
     font-weight: 600;
 }
 
+@media (width<375px) {
+    .associates-title {
+        font-size: 24px;
+    }
+
+    .associates-content img {
+        width: 220px;
+    }
+
+    .associates-content div p {
+        font-size: 14px;
+    }
+}
+
 /* =========== Contact */
 
 #contact {
-    padding: 30px;
+    padding: 40px 20px;
     background-color: var(--cinzaFundo);
 }
 
@@ -441,6 +497,20 @@ a {
     transition: .4s ease-in;
 }
 
+@media (width<375px) {
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .form-btn {
+        font-size: 14px;
+    }
+}
+
 /* =========== FOOTER */
 
 .footer {
@@ -461,6 +531,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 16px;
     margin-bottom: 40px;
 }
 
@@ -501,4 +572,16 @@ a {
     font-size: 14px;
     font-weight: 400;
     color: var(--verdeAguaClaro);
+}
+
+@media (width<325px) {
+
+    .footer-localization i,
+    .footer-localization p {
+        font-size: 12px;
+    }
+
+    .footer-container span {
+        font-size: 10px;
+    }
 }

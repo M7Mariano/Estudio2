@@ -147,7 +147,7 @@ a {
     padding: 20px;
 }
 
-@media (width<320px) {
+@media screen and (max-width: 319px) {
     .banner-text-container {
         top: 20%;
     }
@@ -198,14 +198,14 @@ a {
     box-shadow: 6px 3px 18px -12px rgba(41, 41, 41, 1);
 }
 
-@media (width<307px) {
+@media screen and (max-width: 306px) {
     .about-img img {
         width: 99%;
         height: 99%;
     }
 }
 
-@media (width<375px) {
+@media screen and (max-width: 374px) {
     .about-title {
         font-size: 24px;
     }
@@ -268,13 +268,6 @@ a {
     height: 139px;
 }
 
-@media (width<375px) {
-    .practice-areas div {
-        width: 220px;
-        height: 119px;
-    }
-}
-
 .practice-areas div p {
     color: var(--branco);
     text-shadow: 3px 1px 1px rgb(0, 0, 0);
@@ -283,7 +276,12 @@ a {
     letter-spacing: 1px;
 }
 
-@media (width<375px) {
+@media screen and (max-width: 374px) {
+    .practice-areas div {
+        width: 220px;
+        height: 119px;
+    }
+
     .practice-title {
         font-size: 24px;
     }
@@ -402,7 +400,7 @@ a {
     font-weight: 600;
 }
 
-@media (width<375px) {
+@media screen and (max-width: 374px) {
     .associates-title {
         font-size: 24px;
     }
@@ -497,7 +495,7 @@ a {
     transition: .4s ease-in;
 }
 
-@media (width<375px) {
+@media screen and (max-width: 374px) {
     .contact-title {
         font-size: 24px;
     }
@@ -574,7 +572,7 @@ a {
     color: var(--verdeAguaClaro);
 }
 
-@media (width<325px) {
+@media screen and (max-width: 324px) {
 
     .footer-localization i,
     .footer-localization p {

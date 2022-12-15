@@ -223,7 +223,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-    padding: 40px 0px;
+    padding: 60px 0px;
     background-color: var(--cinzaFundo);
 }
 

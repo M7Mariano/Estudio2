@@ -1,5 +1,7 @@
 # LoremIpsum Advogados :balance_scale:
 
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=success&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=release%20date&message=DECEMBER%202022&color=green&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=license&message=MIT&color=informational&style=for-the-badge"/>
+
 <div align="center">
 
 <img src="https://user-images.githubusercontent.com/113437603/207979654-30b46946-a07f-47a9-8e4d-5dca4877ec01.png" width="760px">
